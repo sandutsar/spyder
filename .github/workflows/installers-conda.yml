@@ -185,7 +185,7 @@ jobs:
 
       - name: Download Local Conda Packages
         if: needs.build-noarch-pkgs.result == 'success'
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
         with:
           path: ${{ env.ARTIFACTS_PATH }}
 
